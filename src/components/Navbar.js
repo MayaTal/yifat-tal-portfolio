@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Tab, Tabs, Box } from "@mui/material";
 // import "../styles/Navbar.css";
@@ -10,8 +10,25 @@ const Navbar = () => {
   //   const toggleNavbar = () => {
   //     setOpenLinks(!openLinks);
   //   };
+  const [value, setValue] = useState(0);
+
+  const handleTabs = (e, val) => {
+    setValue(val);
+  };
+  const pages = [
+    { label: "בית", path: "/" },
+    { label: "אודות", path: "/about" },
+    { label: "הבלוג שלי", path: "/blog" },
+    { label: "ממשבר להזדמנות-ראיונות אישיים", path: "/interviewes" },
+    { label: "הרצאה-התעוזה לשנות", path: "/lecture" },
+    { label: "יצירת קשר", path: "/contact" },
+  ];
+
   return (
-    <AppBar sx={{ backgroundColor: "#e6ecf5", direction: "rtl" }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "#e6ecf5", direction: "rtl" }}
+    >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Typography
           variant="h6"
@@ -27,8 +44,28 @@ const Navbar = () => {
           יפעת טל
         </Typography>
         <Box sx={{ marginRight: "auto" }}>
-          <Tabs sx={{ color: "#fff" }}>
-            <Tab label="בית" component={Link} to="/" />
+          <Tabs
+            value={value}
+            onChange={handleTabs}
+            sx={{ color: "#fff" }}
+            TabIndicatorProps={{
+              style: { display: "none" },
+            }}
+          >
+            {pages.map((page, index) => (
+              <Tab
+                key={page.label}
+                label={page.label}
+                component={Link}
+                to={page.path}
+                sx={{
+                  "&.Mui-selected": {
+                    color: "#357adb",
+                  },
+                }}
+              />
+            ))}
+            {/* <Tab label="בית" component={Link} to="/" />
             <Tab label="אודות" component={Link} to="/about" />
             <Tab label="הבלוג שלי" component={Link} to="/blog" />
             <Tab
@@ -37,7 +74,7 @@ const Navbar = () => {
               to="/interviewes"
             />
             <Tab label="הרצאה - התעוזה לשנות" component={Link} to="/lecture" />
-            <Tab label="יצירת קשר" component={Link} to="/contact" />
+            <Tab label="יצירת קשר" component={Link} to="/contact" /> */}
           </Tabs>
           <Link to="/" style={{ textDecoration: "none" }}></Link>
         </Box>
