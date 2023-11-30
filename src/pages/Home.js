@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/Home.css";
 import { Avatar, Typography } from "@mui/material";
-import photo from "../assets/photo.jpeg";
+import home from "../assets/home.jpeg";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="top-section">
-        <img alt="Your Name" src={photo} className="photo" />
+        <img alt="Your Name" src={home} className="photo" />
         <div className="text-container">
           <Typography
             variant="h6"
@@ -23,9 +23,6 @@ const Home = () => {
             {" "}
             יפעת לשם שינוי{" "}
           </Typography>
-          {/* <Link to="/filter">
-              <button> GET STARTED </button>
-            </Link> */}
         </div>
       </div>
     </div>

@@ -10,11 +10,16 @@
   width: 100%;
   height: auto;
   opacity: 0.3;
+  object-fit: cover;
 }
 
 .text-container {
   position: absolute;
-  bottom: 1000px;
+  bottom: 450px;
   right: 90px;
   font-size: 40px;
+}
+
+.about-me-section {
+  margin-top: 20px; /* Add margin to separate the sections */
 }
