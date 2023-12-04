@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  background-color: #dcd9d5;
+}
+
+.start-component-image img {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 15em;
+  height: auto;
+  margin-bottom: 200px;
+}
+
+.how-start-text-container {
+  max-width: 600px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.bottom-right-image {
+  position: absolute;
+  margin-top: 100px;
+  width: 26em;
+  height: auto;
+  right: 0;
+  opacity: 0.2;
+}

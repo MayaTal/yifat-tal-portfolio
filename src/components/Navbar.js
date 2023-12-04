@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Tab, Tabs, Box } from "@mui/material";
 // import "../styles/Navbar.css";
-// import Logo from "../assets/logo.png";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   //   const [openLinks, setOpenLinks] = useState(false);
@@ -30,6 +30,7 @@ const Navbar = () => {
       sx={{ backgroundColor: "#e6ecf5", direction: "rtl" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <img alt="logo" src={logo} style={{ height: "70px" }} />
         <Typography
           variant="h6"
           sx={{
@@ -37,7 +38,7 @@ const Navbar = () => {
             fontWeight: "bold",
             fontSize: 25,
             fontFamily: "Varela Round",
-            letterSpacing: 2,
+            letterSpacing: 1,
             textShadow: " 1px 1px rgba(0, 0, 0, 0.3)",
           }}
         >
