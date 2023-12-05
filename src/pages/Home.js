@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import { Avatar, Typography } from "@mui/material";
 import Start from "../components/Start";
+import Services from "../components/Serivces";
 
 const Home = () => {
   return (
@@ -10,11 +11,11 @@ const Home = () => {
         <div className="text-container">
           <div className="head-text">
             <Typography
-              variant="h6"
+              variant="h2"
               sx={{
                 color: "#f0f3f5",
                 fontWeight: "bold",
-                fontSize: 70,
+                fontSize: "8vh",
                 fontFamily: "Varela Round",
                 letterSpacing: 2,
                 textShadow: "0 0 10px #000, 0 0 10px #000",
@@ -24,11 +25,11 @@ const Home = () => {
               לשנות.
             </Typography>
             <Typography
-              variant="h6"
+              variant="h2"
               sx={{
                 color: "#f0f3f5",
                 fontWeight: "bold",
-                fontSize: 70,
+                fontSize: "8vh",
                 fontFamily: "Varela Round",
                 letterSpacing: 2,
                 textShadow: "0 0 10px #000, 0 0 10px #000",
@@ -38,11 +39,11 @@ const Home = () => {
               להעז.
             </Typography>
             <Typography
-              variant="h6"
+              variant="h2"
               sx={{
                 color: "#f0f3f5",
                 fontWeight: "bold",
-                fontSize: 70,
+                fontSize: "8vh",
                 fontFamily: "Varela Round",
                 letterSpacing: 2,
                 textShadow: "0 0 10px #000, 0 0 10px #000",
@@ -57,15 +58,15 @@ const Home = () => {
             <Typography
               variant="body1"
               sx={{
-                color: "#616366",
-                fontSize: 28,
+                color: "#3e979b",
+                fontSize: "3.5vh",
                 fontFamily: "Varela Round",
                 fontWeight: "bold",
                 direction: "rtl",
                 padding: 1,
-                border: "2px solid #5f758a",
+                border: "3px solid #3e979b",
                 borderRadius: 1,
-                backgroundColor: "#e8eaff",
+                backgroundColor: "#efece8",
                 textAlign: "center",
               }}
             >
@@ -74,7 +75,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="static-element"></div>
       <Start />
+      <Services />
     </div>
   );
 };

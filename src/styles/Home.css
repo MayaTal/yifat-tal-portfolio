@@ -1,19 +1,19 @@
 .top-section {
-  background-image: url(https://static1.s123-cdn-static-a.com/uploads/4460480/2000_5fd87267ed446.jpg);
+  background-image: url("../assets/backHome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: center 30%;
+  /* background-attachment: fixed; */
   height: 90vh;
   display: flex;
-  justify-content: center; /* Align the content to the right */
-  padding-left: 19.5em;
-  opacity: 0.8;
+  justify-content: right;
+  /* opacity: 0.8; */
 }
 .text-container {
   display: flex;
   flex-direction: column;
-  margin-block-start: 4.83em;
+  margin-block-start: 5.83em;
+  margin-right: 10px;
 }
 .head-text {
   display: flex;
@@ -21,6 +21,11 @@
 }
 .head-text > :not(:last-child) {
   margin-right: 20px;
+}
+.static-element {
+  height: 20px;
+  background-color: #f3f8fd;
+  /* margin: 8px 0; */
 }
 /* 
 .last-typography-container {

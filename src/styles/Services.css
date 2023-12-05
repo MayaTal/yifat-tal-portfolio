@@ -1,0 +1,51 @@
+.services-container {
+  direction: rtl;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.service-image {
+  width: 90%;
+  height: 40vh;
+  border: 2px solid #b0abab;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+}
+
+.service-item {
+  position: relative;
+}
+.service-item::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 98%;
+  background-color: #7a7e7e;
+  position: absolute;
+  top: auto;
+  right: -2.5vh;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 54%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.service-item:hover .middle {
+  opacity: 1;
+}
+/* .service-item:hover .service-image {
+  opacity: 0.3;
+} */
+.text {
+  background-color: #d8d0c3;
+  color: rgb(130, 120, 120);
+  font-size: 20px;
+  padding: 1px 20px;
+  cursor: pointer;
+}

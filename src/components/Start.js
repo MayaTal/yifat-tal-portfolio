@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import start from "../assets/start.png";
-import backStart from "../assets/backStart.png";
+import start from "../assets/start.jpg";
 import "../styles/Start.css";
 import whiteLogo from "../assets/whiteLogo.png";
 
