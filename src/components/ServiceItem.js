@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Typography } from "@mui/material";
 
 const ServiceItem = ({ title, imageSrc }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovered(false);
+  };
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
-    <Grid item xs={4} className="service-item">
+    <Grid
+      item
+      xs={4}
+      className={`service-item ${isHovered ? 'hovered' : ''} ${isClicked ? 'clicked' : ''}`}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      onClick={handleClick}
+    >
       <Typography
         variant="h5"
         sx={{
@@ -16,7 +38,7 @@ const ServiceItem = ({ title, imageSrc }) => {
       </Typography>
       <img src={imageSrc} className="service-image" alt="Section 1" />
       <Typography
-        className="more-info"
+        className={`more-info ${isHovered ? 'hovered' : ''} ${isClicked ? 'clicked' : ''}`}
         variant="h6"
         sx={{
           marginTop: "10px",
