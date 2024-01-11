@@ -1,7 +1,9 @@
-.services-container {
+.services {
   direction: rtl;
+}
+.services-container {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .service-image {

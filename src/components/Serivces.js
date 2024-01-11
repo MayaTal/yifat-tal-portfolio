@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import serviceEscort from "../assets/serviceEscort.jpg";
+import serviceCounsling from "../assets/serviceCounsling.jpg";
 import serviceLecture from "../assets/serviceLecture.jpg";
 import serviceWorkshop from "../assets/serviceWorkshop.jpg";
 import "../styles/Services.css";
@@ -13,9 +13,8 @@ const Services = () => {
         variant="h4"
         sx={{
           fontFamily: "Fredoka",
-          direction: "rtl",
-          marginBottom: "70px",
-          marginTop: "70px",
+          marginBottom: "60px",
+          marginTop: "50px",
           textAlign: "center",
         }}
       >
@@ -25,14 +24,13 @@ const Services = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        dir="rtl"
-        marginBottom="50px"
+        marginBottom="80px"
       >
         <div className="services-container">
           <Grid container spacing={1}>
             <ServiceItem
               title="ליווי אישי וייעוץ מקצועי"
-              imageSrc={serviceEscort}
+              imageSrc={serviceCounsling}
             />
             <ServiceItem
               title="הרצאות השראה

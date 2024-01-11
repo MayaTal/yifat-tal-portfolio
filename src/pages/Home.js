@@ -3,6 +3,8 @@ import "../styles/Home.css";
 import { Avatar, Typography } from "@mui/material";
 import Start from "../components/Start";
 import Services from "../components/Serivces";
+import AboutHome from "../components/AboutHome";
+import TestimonialsHome from "../components/TestimonialsHome";
 
 const Home = () => {
   return (
@@ -78,6 +80,8 @@ const Home = () => {
       <div className="static-element"></div>
       <Start />
       <Services />
+      <AboutHome />
+      <TestimonialsHome />
     </div>
   );
 };

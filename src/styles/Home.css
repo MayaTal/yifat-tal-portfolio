@@ -1,13 +1,15 @@
+.home {
+  position: relative;
+}
+
 .top-section {
   background-image: url("../assets/backHome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 30%;
-  /* background-attachment: fixed; */
   height: 90vh;
   display: flex;
   justify-content: right;
-  /* opacity: 0.8; */
 }
 .text-container {
   display: flex;
@@ -22,11 +24,7 @@
 .head-text > :not(:last-child) {
   margin-right: 20px;
 }
-.static-element {
-  height: 20px;
-  background-color: #f3f8fd;
-  /* margin: 8px 0; */
-}
+
 /* 
 .last-typography-container {
   align-items: center;
